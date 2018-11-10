@@ -1,0 +1,193 @@
+@charset "UTF-8";
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #090A0C;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+  margin: 0 auto;
+  max-width: 1024px;
+  color: #F1F1F5;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.full_width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/*　ヘッダー　*/
+header {
+  width: 100%;
+  padding: 10px 0;
+}
+
+header .sp {
+  display: none;
+}
+
+/* ナビゲーション */
+#gnav {
+  margin: 60px 0 100px 0;
+}
+
+#gnav ul {
+  padding: 0;
+  display: -webkit-flex;
+  display: -webkit-inline-flex;
+  display: flex;
+  justify-content: space-around;
+}
+
+#gnav ul li {
+  font-size: 20px;
+  font-size: 2rem;
+  list-style: none;
+}
+
+#gnav ul li a {
+  color: #F1F1F5;
+}
+
+/* メインコンテンツ */
+#main_contents #profile .section_title {
+  font-family: 'Noto Serif', serif;
+  color: #D8D0C5;
+  text-align: center;
+  font-size: 40px;
+  font-size: 4rem;
+}
+
+#main_contents #profile .member {
+  text-align: center;
+}
+
+#main_contents #profile .member .member_name {
+  padding-bottom: 30px;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1.5rem;
+  font-size: 35px;
+  font-size: 3.5rem;
+}
+
+#main_contents #profile .text {
+  margin: 0 auto;
+  padding: 5% 0;
+}
+
+#main_contents #profile .text .part {
+  color: #9d1a2d;
+  font-weight: bolder;
+}
+
+#main_contents #discography .section_title {
+  font-family: 'Noto Serif', serif;
+  color: #D8D0C5;
+  text-align: center;
+  font-size: 40px;
+  font-size: 4rem;
+}
+
+#main_contents #discography .music_title {
+  padding-bottom: 30px;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1.5rem;
+  text-align: center;
+  font-size: 35px;
+  font-size: 3.5rem;
+}
+
+#main_contents #discography .music_img {
+  text-align: center;
+}
+
+#main_contents #discography .music_content {
+  margin: auto;
+}
+
+#main_contents #contact {
+  text-align: center;
+}
+
+#main_contents #contact .section_title {
+  font-family: 'Noto Serif', serif;
+  color: #D8D0C5;
+  font-size: 40px;
+  font-size: 4rem;
+}
+
+#main_contents #contact button {
+  margin: 30px 20px;
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+#main_contents #contact button i {
+  margin-right: 5px;
+}
+
+footer {
+  text-align: center;
+}
+
+.section {
+  margin: 50px 0 100px 0;
+}
+
+.row {
+  padding: 50px 0;
+}
+
+.center {
+  margin: auto;
+}
+
+.shadow {
+  -webkit-filter: drop-shadow(0 0 5px #F1F1F5);
+}
+
+/*
+*   レスポンシブ対応部分 767px以下時
+*/
+@media (max-width: 767px) {
+  header .pc {
+    display: none;
+  }
+  header .sp {
+    display: block;
+  }
+  #profile .member img {
+    margin-bottom: 30px;
+  }
+  #discography .music_img {
+    margin: 30px 0 50px 0;
+  }
+}
+
+/*
+*   レスポンシブ対応部分 480px以下時
+*/
+@media (max-width: 479px) {
+  body {
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
+  #gnav ul {
+    flex-wrap: wrap;
+  }
+  #gnav ul li {
+    font-size: 20px;
+    font-size: 2rem;
+    margin: 0 5px;
+  }
+}
